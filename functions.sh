@@ -30,8 +30,8 @@ function shortest {
 
 function print_log {
     date_now=$(date +"%Y-%m-%d %H:%M")
-    input_text=$1
-    echo "[$date_now] $input_text"
+    input_text=($@)
+    echo "[$date_now] ${input_text[@]}"
 }
 
 # Put your code here
