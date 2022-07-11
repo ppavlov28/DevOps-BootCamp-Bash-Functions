@@ -29,7 +29,9 @@ function shortest {
 }
 
 function print_log {
-    echo "[$(date +"%Y-%m-%d %H:%M")] $1"
+    date_now=$(date +"%Y-%m-%d %H:%M")
+    input_text=$1
+    echo "[$date_now] $input_text"
 }
 
 # Put your code here
